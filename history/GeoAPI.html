@@ -80,7 +80,7 @@
     <h2>Formation of GeoAPI open source project</h2>
     <p>
       In September 2002, a <a href="https://portal.ogc.org/files/?artifact_id=103494">joint presentation
-      about Grid Coverages in Java</a> was done at the OGC meeting in Noordwijk by Markus Müller (Degree)
+      about Grid Coverages in Java</a> was done at the OGC meeting in Noordwijk by Markus Müller (Degree, now lat/lon GmbH)
       and Martin Desruisseaux (<abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       It was followed by an informal discussion between above-cited speakers and
       James McGill (Geotools), Stephane Fellah (PCI Geomatic),
@@ -101,7 +101,7 @@
       <abbr title="Coordinate Reference System">CRS</abbr> working group started to
       <a href="https://portal.ogc.org/files/?artifact_id=4720">transition from OGC 01-009 to ISO-19111.</a>
       During the Orléan <abbr title="Open Geospatial Consortium">OGC</abbr> meeting in April 2003,
-      an informal discussion happened between Markus Müller, Ian Turton, Martin Daly
+      an informal discussion happened between Markus Müller (Degree), Ian Turton (GeoTools), Martin Daly
       (editor of <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009) and Martin Desruisseaux.
       It was agreed that the Java interfaces published by <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009
       were not longer conform to latest <abbr title="Unified Modeling Language">UML</abbr> diagrams
@@ -133,7 +133,7 @@
     </p>
       <ul>
         <li><b>Projects:</b> <abbr>GO</abbr>-1, GeoTools, GeoServer, Geofoo,
-            FreeGIS, SeaGIS, uDig, JUMP, degree, OpenMap, Gnumeric, <abbr>JTS</abbr>.</li>
+            FreeGIS, SeaGIS, uDig, JUMP, Degree, OpenMap, Gnumeric, <abbr>JTS</abbr>.</li>
         <li><b>Organizations:</b> <abbr>BBN</abbr> Technologies, Refractions Research, <abbr>PCI</abbr> Geomatics,
             The Open Planning Project, Polexis, Penn State, lat/lon, Dominion t.i.,
             Institut de Recherche pour le Développement (<abbr>IRD</abbr>).</li>
@@ -185,14 +185,38 @@
     <p>
       The most fervent GeoAPI supporters among GeoTools core developers were the ones who brought Seagis to GeoTools.
       They were the ones who attended most frequently to <abbr title="Open Geospatial Consortium">OGC</abbr> meetings.
-      After those developers left the GeoTools project in May 2009, the GeoTools PMC decided to
+      After those developers left the GeoTools project in May 2009, the GeoTools <abbr title="project management committee">PMC</abbr> decided to
       <a href="https://github.com/desruisseaux/GeoTools-archive/commit/a9926a2c8600044a036b778ccf19774708dc1489">fork GeoAPI 2.3-M1</a>
       (followed by a <a href="https://github.com/desruisseaux/GeoTools-archive/commit/5e4477fffc6015ae210bdaa97f7c898e79786e80">change
       of file headers</a>), but kept the <code>org.opengis</code> package name.
+      The decision to continue to use the <code>org.opengis</code> namespace for GeoTools's fork of GeoAPI has
+      <a href="https://issues.apache.org/jira/browse/CALCITE-5399?focusedCommentId=17637991#comment-17637991">created
+      conflicts with projects implementing the OGC GeoAPI 3.0 standard</a>.
+      Some GeoTools users <a href="https://sourceforge.net/p/geotools/mailman/message/33467346/">raised concerns about this conflict</a>,
+      but member of the GeoTools <abbr title="project management committee">PMC</abbr> claimed that GeoAPI was a GeoTools outreach project.
+      To put in perspective, the figure below is a timeline with events related to GeoTools in purple and italic characters.
+      Events in blue characters occurred at <abbr title="Open Geospatial Consortium">OGC</abbr> or elsewhere.
+      Green circles are <abbr title="Open Geospatial Consortium">OGC</abbr> meetings having some talks about GeoAPI
+      or <abbr title="Geographic Objects">GO</abbr>-1.
     </p>
-    <p class="figure"><b>Timeline</b></p>
     <p class="figure">
       <img alt="Timeline" src="Timeline.png" width="1200">
+    </p>
+
+    <h2>Continuation</h2>
+    <p>
+      GeoAPI 3.0 had two minor releases for following the evolution of Java environment:
+    </p>
+    <ul>
+      <li>GeoAPI 3.0.1 was released by <abbr>OGC</abbr> in September 2017 for upgrading the JSR-275 dependency to JSR-363.</li>
+      <li>GeoAPI 3.0.2 was released by <abbr>OGC</abbr> in February 2022 for upgrading the JSR-363 dependency to JSR-385
+          and for introducing module information.</li>
+    </ul>
+    <p>
+      As of February 2022, <abbr title="Open Geospatial Consortium">OGC</abbr> GeoAPI 3.0.2 is implemented by
+      <a href="https://sis.apache.org/">Apache SIS</a>, implemented by <a href="https://github.com/OSGeo/PROJ-JNI">OSGeo PROJ-JNI</a>,
+      and used by the <a href="https://github.com/IOGP-GIGS/GIGSGeoAPI">Geospatial Integrity of Geoscience Software (GIGS)</a> tests.
+      Work for 3.1 or 4.0 release is in progress.
     </p>
   </body>
 </html>
