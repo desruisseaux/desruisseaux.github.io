@@ -10,8 +10,9 @@
     <p>
       <a href="https://www.geoapi.org">GeoAPI</a> is a standard from the Open Geospatial Consortium (<abbr>OGC</abbr>)
       defining Java interfaces in the <code>org.opengis</code> namespace.
-      That namespace is used for Java module names and package names,
-      and must be unique for avoiding collisions with other projects.
+      This namespace is used for Java module names and package names.
+      This must be unique for making interoperability possible,
+      or even projects coexistence in the same <abbr title="Java Virtual Machine">JVM</abbr>.
     </p>
 
     <h2>First apparition of GeoAPI interfaces</h2>
@@ -54,7 +55,7 @@
     </blockquote>
     <p>
       At the time when <abbr>OGC</abbr> 01-009 was published,
-      <abbr>OGC</abbr> was named <cite>The OpenGIS consortium</cite>
+      <abbr>OGC</abbr> was named <cite>The OpenGIS® consortium</cite>
       and its web site was hosted at <a href="http://www.opengis.org">http://www.opengis.org</a>.
       Consequently the use of <code>org.opengis</code> package name was a natural choice.
       Still today, the Open Geospatial Consortium owns the <u>opengis.org</u> domain name
@@ -116,6 +117,8 @@
       interfaces using <abbr>OGC</abbr> 01-009 as a starting point</a>.
       Even if the <abbr title="Unified Modeling Language">UML</abbr>s were different,
       the design approach of <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009 was still relevant.
+      The mapping between the old model and the new model, and how both of them map to Java interfaces,
+      is published in <a href="https://portal.ogc.org/files/?artifact_id=71648"><abbr>OGC</abbr> 09-083r4</a> annex F.
     </p>
     <h2>Formation of <abbr title="Geographic Objects">GO</abbr>-1 project</h2>
     <p>
@@ -127,13 +130,13 @@
       with goals very similar to GeoAPI.
       James McGill made a
       <a href="https://portal.ogc.org/files/?artifact_id=4492">call to work with open source projects</a> in January 2004.
-      A joint GO-1/GeoAPI meeting was hold at OGC in <a href="https://portal.ogc.org/files/?artifact_id=6273">June 2004</a>
+      A joint GO-1/GeoAPI meeting was hold at <abbr>OGC</abbr> in <a href="https://portal.ogc.org/files/?artifact_id=6273">June 2004</a>
       and a <a href="https://portal.ogc.org/files/?artifact_id=6356">GeoAPI charter has been drafted</a>.
       The reported participants were:
     </p>
       <ul>
         <li><b>Projects:</b> <abbr>GO</abbr>-1, GeoTools, GeoServer, Geofoo,
-            FreeGIS, SeaGIS, uDig, JUMP, Degree, OpenMap, Gnumeric, <abbr>JTS</abbr>.</li>
+            FreeGIS, SeaGIS, uDig, JUMP, Degree, OpenMap, Gnumeric, <abbr title="Java Topology Suite">JTS</abbr>.</li>
         <li><b>Organizations:</b> <abbr>BBN</abbr> Technologies, Refractions Research, <abbr>PCI</abbr> Geomatics,
             The Open Planning Project, Polexis, Penn State, lat/lon, Dominion t.i.,
             Institut de Recherche pour le Développement (<abbr>IRD</abbr>).</li>
@@ -189,12 +192,15 @@
       <a href="https://github.com/desruisseaux/GeoTools-archive/commit/a9926a2c8600044a036b778ccf19774708dc1489">fork GeoAPI 2.3-M1</a>
       (followed by a <a href="https://github.com/desruisseaux/GeoTools-archive/commit/5e4477fffc6015ae210bdaa97f7c898e79786e80">change
       of file headers</a>), but kept the <code>org.opengis</code> package name.
-      The decision to continue to use the <code>org.opengis</code> namespace for GeoTools's fork of GeoAPI has
+      The decision to continue to use the OpenGIS® namespace for GeoTools's fork of GeoAPI has
       <a href="https://issues.apache.org/jira/browse/CALCITE-5399?focusedCommentId=17637991#comment-17637991">created
       conflicts with projects implementing the OGC GeoAPI 3.0 standard</a>.
-      Some GeoTools users <a href="https://sourceforge.net/p/geotools/mailman/message/33467346/">raised concerns about this conflict</a>,
-      but member of the GeoTools <abbr title="project management committee">PMC</abbr> claimed that GeoAPI was a GeoTools outreach project.
-      To put in perspective, the figure below is a timeline with events related to GeoTools in purple and italic characters.
+      Some GeoTools users <a href="https://sourceforge.net/p/geotools/mailman/message/33467346/">complained about this conflict</a>,
+      but the GeoTools <abbr title="project management committee">PMC</abbr> replied
+      — and <a href="https://docs.geotools.org/stable/userguide/faq.html#q-relationship-with-geoapi">suggests in their <abbr title="Frequently Asked Questions">FAQ</abbr></a> —
+      that GeoAPI was a GeoTools outreach project which donated their interfaces to <abbr>OGC</abbr>.
+      To put this claim in perspective, the figure below is a timeline with the events cited in above paragraphs.
+      Events related to GeoTools are in purple and italic characters.
       Events in blue characters occurred at <abbr title="Open Geospatial Consortium">OGC</abbr> or elsewhere.
       Green circles are <abbr title="Open Geospatial Consortium">OGC</abbr> meetings having some talks about GeoAPI
       or <abbr title="Geographic Objects">GO</abbr>-1.
@@ -217,6 +223,7 @@
       <a href="https://sis.apache.org/">Apache SIS</a>, implemented by <a href="https://github.com/OSGeo/PROJ-JNI">OSGeo PROJ-JNI</a>,
       and used by the <a href="https://github.com/IOGP-GIGS/GIGSGeoAPI">Geospatial Integrity of Geoscience Software (GIGS)</a> tests.
       Work for 3.1 or 4.0 release is in progress.
+      GeoAPI is among the most popular repositories of <a href="https://github.com/opengeospatial/"><abbr>OGC</abbr> GitHub</a>.
     </p>
   </body>
 </html>
