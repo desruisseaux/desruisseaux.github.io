@@ -8,7 +8,7 @@
   <body>
     <h1>GeoAPI history</h1>
     <p>
-      <a href="https://www.geoapi.org">GeoAPI</a> is a standard from the Open Geospatial Consortium (<abbr>OGC</abbr>)
+      <a href="https://www.geoapi.org/">GeoAPI</a> is a standard from the Open Geospatial Consortium (<abbr>OGC</abbr>)
       defining Java interfaces in the <code>org.opengis</code> namespace.
       This namespace is used for Java module names and package names.
       This must be unique for making interoperability possible,
@@ -20,7 +20,7 @@
       Talks at <abbr>OGC</abbr> about standard Java interfaces
       go as far as <a href="https://portal.ogc.org/files/?artifact_id=3578">February 2000</a>.
       The first public release of Java interfaces in <code>org.opengis</code> packages was in the
-      <a href="https://www.ogc.org/standards/ct">OpenGIS Coordinate Transformation Service Implementation Specification</a>
+      <a href="https://www.ogc.org/standard/ct/">OpenGIS Coordinate Transformation Service Implementation Specification</a>
       (<abbr>OGC</abbr> 01-009) standard, published in January 12th, 2001.
       That specification was edited by Computer Aided Development Corporation (Cadcorp) Ltd.
       The Java sources and
@@ -59,7 +59,7 @@
       and its web site was hosted at <a href="http://www.opengis.org">http://www.opengis.org</a>.
       Consequently the use of <code>org.opengis</code> package name was a natural choice.
       Still today, the Open Geospatial Consortium owns the <u>opengis.org</u> domain name
-      and OpenGIS is still a <a href="https://www.ogc.org/ogc/policies/trademark">registered
+      and OpenGIS is still a <a href="https://www.ogc.org/about/policies/media-guidance/">registered
       <abbr title="Open Geospatial Consortium">OGC</abbr> trademark</a>.
       The GeoAPI name however was not yet in use.
     </p>
@@ -102,8 +102,9 @@
       <abbr title="Coordinate Reference System">CRS</abbr> working group started to
       <a href="https://portal.ogc.org/files/?artifact_id=4720">transition from OGC 01-009 to ISO-19111.</a>
       During the Orléan <abbr title="Open Geospatial Consortium">OGC</abbr> meeting in April 2003,
-      an informal discussion happened between Markus Müller (Degree), Ian Turton (GeoTools), Martin Daly
-      (editor of <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009) and Martin Desruisseaux.
+      an informal discussion happened between Markus Müller (Degree), Ian Turton (GeoTools),
+      Martin Daly (editor of <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009) and
+      Martin Desruisseaux (<abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       It was agreed that the Java interfaces published by <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009
       were not longer conform to latest <abbr title="Unified Modeling Language">UML</abbr> diagrams
       and that the creation of new Java interfaces will be mandated to the GeoAPI project.
@@ -122,13 +123,21 @@
     </p>
     <h2>Formation of <abbr title="Geographic Objects">GO</abbr>-1 project</h2>
     <p>
-      Meanwhile, <a href="https://www.ogc.org/pressroom/pressreleases/320"><abbr>OGC</abbr> issued a Request for Technology (<abbr>RFT</abbr>)</a>
-      in <a href="https://portal.ogc.org/files/?artifact_id=8578">summer 2002</a>,
+      Meanwhile, <a href="https://web.archive.org/web/20210731194144/https://www.ogc.org/pressroom/pressreleases/320"><abbr>OGC</abbr>
+      issued a Request for Technology (<abbr>RFT</abbr>)</a> on September 6th, 2002
+      (<a href="https://portal.ogc.org/files/?artifact_id=8578">anticipated during the summer</a>),
       slightly before open-source developers meet for the first time in above-cited <abbr>OGC</abbr> meetings.
+      <!--
+        New link, but date seems wrong:
+        https://www.ogc.org/news/ogc-issues-a-request-for-technology-in-support-of-the-geographic-objects-initiative/
+        RFT quote for search on internet:
+
+           "The vision for the Geographic Objects Initiative is to define platform-independent and
+            implementation-neutral interface models of specific geographic services or component objects."
+      -->
       The <abbr title="Request for Technology">RFT</abbr> has been responded with the launch of
-      <a href="https://www.ogc.org/standards/go"><abbr title="Geographic Objects">GO</abbr>-1 project</a> in January 2003,
-      with goals very similar to GeoAPI.
-      James McGill made a
+      <a href="https://web.archive.org/web/20220927212640/https://www.ogc.org/standards/go"><abbr title="Geographic Objects">GO</abbr>-1
+      project</a> in January 2003, with goals very similar to GeoAPI. James McGill made a
       <a href="https://portal.ogc.org/files/?artifact_id=4492">call to work with open source projects</a> in January 2004.
       A joint GO-1/GeoAPI meeting was hold at <abbr>OGC</abbr> in <a href="https://portal.ogc.org/files/?artifact_id=6273">June 2004</a>
       and a <a href="https://portal.ogc.org/files/?artifact_id=6356">GeoAPI charter has been drafted</a>.
@@ -173,14 +182,14 @@
       which in turn slowed development on GeoAPI.
       The GeoAPI working group has been dissolved in June 2006, but recreating the working group was
       <a href="https://portal.ogc.org/files/?artifact_id=103505">proposed one year later</a>
-      and became <a href="https://portal.ogc.org/?m=projects&a=view&project_id=294">effective in January 2009</a> as GeoAPI 3.0.
+      and became <a href="https://portal.ogc.org/?m=projects&amp;a=view&amp;project_id=294">effective in January 2009</a> as GeoAPI 3.0.
       This group took a narrower focus compared to GeoAPI 2.0, concentrating on the most stable interfaces, and putting the others
       — such as geometries — in a module entitled “pending”, for future consideration.
       <a href="https://www.geoapi.org/3.0/index.html">GeoAPI 3.0</a> became an
-      <a href="https://www.ogc.org/standards/geoapi"><abbr>OGC</abbr> standard</a> in April 2011.
-      This version was the first to be deployed in the <a href="https://search.maven.org/#search|ga|1|geoapi">Maven central repository</a>.
+      <a href="https://www.ogc.org/standard/geoapi/"><abbr>OGC</abbr> standard</a> in April 2011.
+      This version was the first to be deployed in the <a href="https://central.sonatype.com/search?q=geoapi&amp;namespace=org.opengis">Maven central repository</a>.
       GeoAPI development continues since that time. From 2007 to 2022 they were
-      <a href="https://portal.ogc.org/index.php?m=projects&a=view&project_id=294&tab=2&artifact_id=34498">more than 25
+      <a href="https://portal.ogc.org/index.php?m=projects&amp;a=view&amp;project_id=294&amp;tab=2&amp;artifact_id=34498">more than 25
       <abbr title="Open Geospatial Consortium">OGC</abbr> meetings</a> with presentations or motions related to GeoAPI.
     </p>
 
@@ -196,8 +205,9 @@
       <a href="https://issues.apache.org/jira/browse/CALCITE-5399?focusedCommentId=17637991#comment-17637991">created
       conflicts with projects implementing the OGC GeoAPI 3.0 standard</a>.
       Some GeoTools users <a href="https://sourceforge.net/p/geotools/mailman/message/33467346/">complained about this conflict</a>,
-      but the GeoTools <abbr title="project management committee">PMC</abbr> replied
-      — and <a href="https://docs.geotools.org/stable/userguide/faq.html#q-relationship-with-geoapi">suggests in their <abbr title="Frequently Asked Questions">FAQ</abbr></a> —
+      but the GeoTools <abbr title="project management committee">PMC</abbr> replied — and
+      <a href="https://web.archive.org/web/20210619072403/https://docs.geotools.org/stable/userguide/faq.html#q-relationship-with-geoapi">suggests
+      in their <abbr title="Frequently Asked Questions">FAQ</abbr></a> —
       that GeoAPI was a GeoTools outreach project which donated their interfaces to <abbr>OGC</abbr>.
       To put this claim in perspective, the figure below is a timeline with the events cited in above paragraphs.
       Events related to GeoTools are in purple and italic characters.
@@ -207,6 +217,20 @@
     </p>
     <p class="figure">
       <img alt="Timeline" src="Timeline.png" width="1200">
+    </p>
+    <p>
+      If "GeoAPI" is understood as Java interfaces in the <code>org.opengis</code> package namespace,
+      or more generally as a common <abbr title="Application Programming Interface">API</abbr>
+      for independent geospatial projects, then
+      the GeoTools <abbr title="Frequently Asked Questions">FAQ</abbr> claim that GeoAPI started
+      with GeoTools founder's email is false.
+      The claim that <abbr title="Geographic Objects">GO</abbr>-1 started after GeoAPI ignores the prior
+      <abbr title="Open Geospatial Consortium">OGC</abbr> <abbr title="Request for Technology">RFT</abbr>.
+      The point saying that <abbr>OGC</abbr> GeoAPI working group has been dissolved omits to said that
+      the group has been formally recreated three years later, and that <abbr>OGC</abbr> meetings did not stopped.
+      The point saying that the <abbr>OGC</abbr> specification based on GeoAPI 2.0 has been retired
+      omits to said that it has been replaced by <abbr>OGC</abbr> GeoAPI 3.0 standard,
+      and that <abbr>OGC</abbr> has published formal GeoAPI releases on Maven Central.
     </p>
 
     <h2>Continuation</h2>
@@ -223,7 +247,21 @@
       <a href="https://sis.apache.org/">Apache SIS</a>, implemented by <a href="https://github.com/OSGeo/PROJ-JNI">OSGeo PROJ-JNI</a>,
       and used by the <a href="https://github.com/IOGP-GIGS/GIGSGeoAPI">Geospatial Integrity of Geoscience Software (GIGS)</a> tests.
       Work for 3.1 or 4.0 release is in progress.
+      A <a href="https://opengeospatial.github.io/ogcna-auto-review/23-016.html">specification draft</a> is publicly available.
       GeoAPI is among the most popular repositories of <a href="https://github.com/opengeospatial/"><abbr>OGC</abbr> GitHub</a>.
+    </p>
+    <p>
+      Several packages defined in GeoAPI 2.0 have been temporarily retired from GeoAPI 3.0 releases.
+      The geometry package has been retired because two Ph.D. students tried independently
+      to implement it with limited success, which suggests that the model needs revision
+      (confirmed with new model in <abbr>ISO</abbr> 19107 revision).
+      The coverage package has been retired because the model needs clarification
+      (confirmed with new <cite>Coverage Implementation Schema</cite> part in <abbr>ISO</abbr> 19123 revision).
+      The feature, filter and style packages have been retired because they were derived from <abbr>XML</abbr> schemas,
+      which led to poor result for a programmatic <abbr>API</abbr>.
+      The feature and filter packages are proposed for reintroduction in GeoAPI 3.1
+      with a new <abbr>API</abbr> derived from <abbr>OGC</abbr>/<abbr>ISO</abbr> abstract models (<abbr>UML</abbr>).
+      Other temporarily retired packages will follow later.
     </p>
   </body>
 </html>
