@@ -11,8 +11,8 @@
       <a href="https://www.geoapi.org/">GeoAPI</a> is a standard from the Open Geospatial Consortium (<abbr>OGC</abbr>)
       defining Java interfaces in the <code>org.opengis</code> namespace.
       This namespace is used for Java module names and package names.
-      This must be unique for making interoperability possible,
-      or even projects coexistence in the same <abbr title="Java Virtual Machine">JVM</abbr>.
+      This name must be unique for making interoperability possible,
+      or for allowing projects coexistence in the same <abbr title="Java Virtual Machine">JVM</abbr>.
     </p>
 
     <h2>First apparition of GeoAPI interfaces</h2>
@@ -86,7 +86,8 @@
       It was followed by an informal discussion between above-cited speakers and
       James McGill (Geotools), Stephane Fellah (PCI Geomatic),
       an <abbr title="University Corporation for Atmospheric Research">UCAR</abbr> reprensentative
-      and an <abbr title="Open Geospatial Consortium">OGC</abbr> representative.
+      and an <abbr title="Open Geospatial Consortium">OGC</abbr> representative
+      (<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       Following that discussion, James McGill launched in October 2002 a
       <a href="http://web.archive.org/web/20030509104308/http://digitalearth.org/story/2002/10/10/55046/206">call
       for the creation of a geospatial <abbr title="Application Programming Interface">API</abbr></a>.
@@ -107,7 +108,8 @@
       Martin Desruisseaux (<abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       It was agreed that the Java interfaces published by <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009
       were not longer conform to latest <abbr title="Unified Modeling Language">UML</abbr> diagrams
-      and that the creation of new Java interfaces will be mandated to the GeoAPI project.
+      and that the creation of new Java interfaces will be mandated to the GeoAPI project
+      (<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       The <a href="https://github.com/opengeospatial/geoapi/commit/8676b73d8d71218e8427f14b4551fee741752c9e">first commit
       of actual Java interfaces</a> was two months later.
       The <code>org.opengis</code> package name was used in agreement with the decision taken during above-cited ad-hoc meeting.
@@ -231,6 +233,14 @@
       The point saying that the <abbr>OGC</abbr> specification based on GeoAPI 2.0 has been retired
       omits to said that it has been replaced by <abbr>OGC</abbr> GeoAPI 3.0 standard,
       and that <abbr>OGC</abbr> has published formal GeoAPI releases on Maven Central.
+    </p><p>
+      GeoTools improved the honesty of their <abbr title="Frequently Asked Questions">FAQ</abbr> in March 2023
+      and announced that work for resolving the package name collision would start in August.
+      Those resolutions happened after the issue has been escalated to the OSGeo board
+      with copy to <abbr title="Open Geospatial Consortium">OGC</abbr>.
+      Disruption for GeoTools users could have been minimized by complying to the OGC standard for the metadata and referencing parts,
+      since the <a href="https://www.geoapi.org/archives/2.3-M6/since-M1.html">changes between GeoTools fork and GeoAPI 3.0</a>
+      were documented for ten years. But GeoTools decided to cut all links to <code>org.opengis</code>.
     </p>
 
     <h2>Continuation</h2>
