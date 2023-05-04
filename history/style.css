@@ -9,3 +9,8 @@ p {
 p.figure {
   text-align: center;
 }
+
+cite.source {
+  font-style: normal;
+  color: SteelBlue;
+}

@@ -84,10 +84,10 @@
       about Grid Coverages in Java</a> was done at the OGC meeting in Noordwijk by Markus Müller (Degree, now lat/lon GmbH)
       and Martin Desruisseaux (<abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
       It was followed by an informal discussion between above-cited speakers and
-      James McGill (Geotools), Stephane Fellah (PCI Geomatic),
+      James McGill (GeoTools), Stephane Fellah (PCI Geomatic),
       an <abbr title="University Corporation for Atmospheric Research">UCAR</abbr> reprensentative
       and an <abbr title="Open Geospatial Consortium">OGC</abbr> representative
-      (<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
+      <cite class="source">(<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>)</cite>.
       Following that discussion, James McGill launched in October 2002 a
       <a href="http://web.archive.org/web/20030509104308/http://digitalearth.org/story/2002/10/10/55046/206">call
       for the creation of a geospatial <abbr title="Application Programming Interface">API</abbr></a>.
@@ -109,7 +109,7 @@
       It was agreed that the Java interfaces published by <abbr title="Open Geospatial Consortium">OGC</abbr> 01-009
       were not longer conform to latest <abbr title="Unified Modeling Language">UML</abbr> diagrams
       and that the creation of new Java interfaces will be mandated to the GeoAPI project
-      (<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>).
+      <cite class="source">(<i>source:</i> travel report to <abbr title="Institut de Recherche pour le Développement">IRD</abbr>)</cite>.
       The <a href="https://github.com/opengeospatial/geoapi/commit/8676b73d8d71218e8427f14b4551fee741752c9e">first commit
       of actual Java interfaces</a> was two months later.
       The <code>org.opengis</code> package name was used in agreement with the decision taken during above-cited ad-hoc meeting.
@@ -233,14 +233,39 @@
       The point saying that the <abbr>OGC</abbr> specification based on GeoAPI 2.0 has been retired
       omits to said that it has been replaced by <abbr>OGC</abbr> GeoAPI 3.0 standard,
       and that <abbr>OGC</abbr> has published formal GeoAPI releases on Maven Central.
-    </p><p>
-      GeoTools improved the honesty of their <abbr title="Frequently Asked Questions">FAQ</abbr> in March 2023
-      and announced that work for resolving the package name collision would start in August.
+    </p>
+
+    <h3>Conflict resolution</h3>
+    <p>
+      GeoTools rewrote a more honest <abbr title="Frequently Asked Questions">FAQ</abbr> in March 2023 and announced in April
+      (during <a href="https://github.com/opengeospatial/developer-events/wiki/Open-Standards-and-Open-Source-Software-Code-Sprint">OGC/OSGeo/ASF code sprint</a>)
+      that work for resolving the package name collision would start in August.
       Those resolutions happened after the issue has been escalated to the OSGeo board
-      with copy to <abbr title="Open Geospatial Consortium">OGC</abbr>.
+      with <abbr title="Open Geospatial Consortium">OGC</abbr> in copy.
+      GeoTools initially asked to be paid by (among others) the Apache Software Foundation (<abbr>ASF</abbr>)
+      for doing this work since Apache projects are impacted,
+      but it has been reminded that OpenGIS® is protected by trademark laws
+      <cite class="source">(<i>source:</i> OSGeo board private email archive, 2023/03/16)</cite>.
+      If <abbr>OGC</abbr> decides to ask GeoTools to stop using that name,
+      then this is not optional and the budget question is not <abbr title="Open Geospatial Consortium">OGC</abbr>
+      or <abbr title="Apache Software Foundation">ASF</abbr> problem.
+      No formal decision was taken by <abbr>OGC</abbr> before GeoTools made their announcement, but talks were in progress.
+    </p><p>
+      During the 10 years before those events, all demands for conflict resolution were either ignored
+      using the formally biased GeoTools <abbr title="Frequently Asked Questions">FAQ</abbr> as a justification,
+      or blocked by requests for payment from a GeoTools member.
+      It took <abbr>OGC</abbr> and OSGeo involvement for having progress.
+      But the expectation that GeoTools should assume the responsibility for this work
+      has been criticized by a GeoTools member as not being the way that open source collaboration works
+      <cite class="source">(<i>source:</i> OSGeo board private email archive, 2023/03/17)</cite>.
+    </p><p>
+      Different strategies with different effort/disruption tradeoffs
+      <a href="https://github.com/opengeospatial/developer-events/wiki/Open-Standards-and-Open-Source-Software-Code-Sprint:---Mentored-Projects#resolve-geotools-conflict-with-geoapi">were
+      proposed during the OSGeo/OGC/ASF code sprint</a>.
       Disruption for GeoTools users could have been minimized by complying to the OGC standard for the metadata and referencing parts,
       since the <a href="https://www.geoapi.org/archives/2.3-M6/since-M1.html">changes between GeoTools fork and GeoAPI 3.0</a>
-      were documented for ten years. But GeoTools decided to cut all links to <code>org.opengis</code>.
+      were documented for ten years. But GeoTools decided to cut all links to <code>org.opengis</code>,
+      followed by an opportunistic refactoring of their <abbr title="Application Programming Interface">API</abbr>.
     </p>
 
     <h2>Continuation</h2>
