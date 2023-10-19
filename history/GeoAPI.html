@@ -15,7 +15,7 @@
       or for allowing projects coexistence in the same <abbr title="Java Virtual Machine">JVM</abbr>.
     </p>
 
-    <h2>First apparition of GeoAPI interfaces</h2>
+    <h2 id="beginning">First apparition of GeoAPI interfaces</h2>
     <p>
       Talks at <abbr>OGC</abbr> about standard Java interfaces
       go as far as <a href="https://portal.ogc.org/files/?artifact_id=3578">February 2000</a>.
@@ -219,7 +219,7 @@
       Green circles are <abbr title="Open Geospatial Consortium">OGC</abbr> meetings having some talks about GeoAPI
       or <abbr title="Geographic Objects">GO</abbr>-1.
     </p>
-    <p class="figure">
+    <p id="timeline" class="figure">
       <img alt="Timeline" src="Timeline.png" width="1200">
     </p>
     <p>
@@ -268,6 +268,38 @@
       since the <a href="https://www.geoapi.org/archives/2.3-M6/since-M1.html">changes between GeoTools fork and GeoAPI 3.0</a>
       were documented for ten years. But GeoTools decided to cut all links to <code>org.opengis</code>,
       followed by an opportunistic refactoring of their <abbr title="Application Programming Interface">API</abbr>.
+    </p>
+
+    <h3>GeoTools 30 release</h3>
+    <p>
+      GeoTools 30 was released in October 15, 2023.
+      That release contains a renaming of <code>org.opengis</code> packages to <code>org.geotools.api</code>, which resolves the conflict.
+      The <a href="https://geotoolsnews.blogspot.com/2023/10/geotools-300-released.html">release announcement</a>
+      said that <q>although this was setup as an joint-initiative to be addressed with other organizations
+      (notably <abbr>OGC</abbr> responsible for GeoAPI, and <abbr>ASF</abbr> making the request),
+      only OSGeo was forthcoming with funding</q>,
+      without mentioning why <abbr>OGC</abbr> and <abbr>ASF</abbr> refused to pay:
+      GeoTools wanted <abbr>OGC</abbr> and <abbr>ASF</abbr> to pay for GeoTools opportunistic refactoring,
+      a task much larger than resolving the conflict (it could have been resolved with a search-and-replace).
+
+      Furthermore the release announcement contains a link to a call for sponsors titled
+      <a href="https://www.osgeo.org/opengis-harmonization/">OpenGIS Harmonization</a> which is still claiming that
+      <q>GeoTools, OpenJUMP and deegree setup <code>org.opengis</code> interfaces</q>.
+      This is <strong>false</strong>, as demonstrated <a href="#beginning">above</a> by evidence of previous work.
+
+      The page also claims that
+      <q>the activity was later abandoned <span style="font-style:normal">(…snip…)</span>,
+      leaving GeoTools to adopt these interfaces as the <code>gt-opengis</code> module</q>,
+      which is also <strong>false</strong>: the GeoAPI 3 Standard Working Group was active
+      when GeoTools forked GeoAPI (see the <a href="#timeline">timeline figure</a>).
+
+      The page also claims that
+      <q>Many, many years later the OGC GeoAPI Implementation Specification was resumed,
+      and now requires exclusive use of the <code>org.opengis</code> Java package</q>.
+      This is <strong>false</strong> again: the GeoAPI 3.0 specification was published
+      6 months after GeoTools forked GeoAPI 2.3-M1 (<a href="#timeline">timeline figure</a>),
+      and <abbr>OGC</abbr> never authorized GeoTools to use the OpenGIS® name for work done
+      outside the <abbr>OGC</abbr> working groups.
     </p>
 
     <h2>Continuation</h2>
